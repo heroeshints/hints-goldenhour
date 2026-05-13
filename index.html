@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Golden Hour: Pandemic | Coming Soon</title>
+  <meta name="description" content="The Golden Hour: Pandemic is preparing a new healthcare disaster simulation platform website." />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg2: #0f1e33;
+      --white: #ffffff;
+      --muted: rgba(255,255,255,0.72);
+      --orange: #ff7a1a;
+      --teal: #14b8a6;
+      --line: rgba(255,255,255,0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(5,11,22,0.94), rgba(7,17,31,0.78)),
+        url("images/hero-team.jpg"),
+        linear-gradient(135deg, var(--bg), var(--bg2));
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .card {
+      width: min(100%, 760px);
+      padding: 46px;
+      border-radius: 32px;
+      background: rgba(7,17,31,0.72);
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 100px rgba(0,0,0,0.36);
+      backdrop-filter: blur(18px);
+      text-align: center;
+    }
+
+    .mark {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 22px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--orange), var(--teal));
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      font-weight: 950;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: clamp(17px, 2vw, 22px);
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .status {
+      display: grid;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      width: 68%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--teal), var(--orange));
+    }
+
+    .status-text {
+      color: rgba(255,255,255,0.68);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), #ff9a3d);
+      color: white;
+    }
+
+    .btn-secondary {
+      border-color: var(--line);
+      background: rgba(255,255,255,0.08);
+      color: white;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: rgba(255,255,255,0.58);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 34px 24px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="mark">G</div>
+
+    <div class="eyebrow">Website in preparation</div>
+
+    <h1>The Golden Hour: Pandemic</h1>
+
+    <p class="subtitle">
+      A phygital healthcare disaster simulation platform is preparing for launch.
+      Our full website will be available soon.
+    </p>
+
+    <div class="status" aria-label="Website preparation status">
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+      <div class="status-text">Preparing product materials, demo visuals, and partnership information.</div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:heroeshints@gmail.com?subject=Inquiry%20-%20The%20Golden%20Hour%20Pandemic">
+        Contact Us
+      </a>
+      <a class="btn btn-secondary" href="index2.html">
+        Preview Website
+      </a>
+    </div>
+
+    <div class="footer">
+      Contact: heroeshints@gmail.com
+    </div>
+  </main>
+</body>
+</html>
