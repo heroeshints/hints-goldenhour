@@ -334,15 +334,20 @@
     .showcase-image {
       border-radius: 26px;
       overflow: hidden;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: #ffffff;
       border: 1px solid rgba(255, 255, 255, 0.14);
-      min-height: 390px;
+      height: 390px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .showcase-image img {
       width: 100%;
-      height: 390px;
-      object-fit: cover;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: #ffffff;
     }
 
     .showcase-caption {
@@ -878,10 +883,14 @@
         width: 100%;
       }
 
-      .showcase-image,
-      .showcase-image img {
-        min-height: 300px;
+      .showcase-image {
         height: 300px;
+      }
+
+      .showcase-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .showcase-caption {
